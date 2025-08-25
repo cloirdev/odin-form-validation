@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Form Validation</h1>
+    <form action="">
+      <label for="email">Email
+        <input type="email" name="email" id="email" required autocomplete="off"/>
+      </label>
+      
+      <label for="cp">Postal Code
+        <input type="text" name="cp" id="cp" pattern="[0-9]{5}" required autocomplete="off" />
+      </label>
+
+      <label for="countries"> Choose your country
+        <input list="countries" required >
+        <datalist id="countries">
+            <option value="España"></option>
+            <option value="Portugal"></option>
+            <option value="Andorra"></option>
+            <option value="Francia"></option>
+        </datalist>
+      </label>
+      <label for="password">Password
+        <input type="password" required>
+      </label>
+      <label for="confirm-password">Confirm your password
+        <input type="password" required>
+      </label>
+      <button type="submit">Enviar
+
+      </button>
+    </form>
+    </form>
+  </body>
+</html>

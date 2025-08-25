@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+input:user-invalid {
+  background-color: red;
+}
+
+form {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr;
+  border: 1px solid brown;
+  padding: 1rem;
+}
